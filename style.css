@@ -13,17 +13,14 @@
 header {
     background-color: var(--color-blue);
     color: white;
-    padding-top: 10px;
-}
-
-nav.container .row {
-    margin-bottom: 40px;
 }
 
 nav.container .row {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    padding: 10px 0;
 }
 
 .nav-login {
