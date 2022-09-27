@@ -1,0 +1,191 @@
+:root {
+    --color-blue: rgb(50,96,224);
+    --color-black: rgb(32, 35, 37);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: var(--color-blue);
+    color: white;
+    padding-top: 10px;
+}
+
+nav.container .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 40px;
+}
+
+.nav-login {
+    text-align: right;
+}
+
+section {
+    padding: 40px;
+}
+
+section:nth-child(2n+3) {
+    background-color: rgb(245, 245, 245);
+}
+
+footer {
+    background-color: black;
+}
+
+header section {
+    background-image: url(img/jumbo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.nav-link-container {
+    flex-grow: 1;
+    padding: 0;
+    line-height: 38px;
+}
+
+.nav-link-container ul {
+    list-style: none;
+
+    display: flex;
+    justify-content: center;
+}
+
+.nav-link-container ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 0 10px;
+
+    display: flex;
+    align-items: center;
+}
+
+.nav-side {
+    width: calc(920px / 5);
+    padding: 10px;
+}
+
+[class^='container'] {
+    margin: auto;
+}
+
+.container {
+    width: 920px;
+}
+
+.container-small {
+    width: 700px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-small > div {
+    text-align: center;
+}
+
+.container-small h1 {
+    margin-bottom: 20px;
+}
+
+
+.container-big {
+    width: 920px;
+    padding: 400px;
+    background-color: green;
+}
+
+.container .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .row .col-small {
+    flex-basis: 30%;
+}
+
+.container .row .col-big {
+    flex-basis: 70%;
+}
+
+.container .row .col-big > img {
+    padding: 40px;
+}
+
+.footer1 {
+    display: flex;
+    padding: 5px 0 40px 0;
+    border-bottom: 2px solid blue;
+}
+
+.footer-menu {
+    border: 1px dashed black;
+    padding: 200px 50px;
+    background-color: tomato;
+    flex-basis: calc((920px / 6) * 2 );
+    flex-grow: 1;
+
+}
+
+.footer-links {
+    border: 1px dashed white;
+    background-color: aquamarine;
+    padding: 50px;
+    width: calc(920px / 6);
+}
+
+.footer2 {
+    margin-top: 40px;
+    padding: 1rem 0;
+    background-color: aqua;
+
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo,
+.footer-btn {
+    padding: 5px 10px;
+    background-color: lightpink;
+}
+
+.btn {
+    border-radius: 20px;
+    padding: 0.5rem 0.7rem;
+    border: none;
+}
+
+.btn-white {
+    background-color: white;
+}
+
+.btn-black {
+    background-color: var(--color-black);
+    color: white;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
