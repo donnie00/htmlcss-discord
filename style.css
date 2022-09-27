@@ -1,6 +1,7 @@
 :root {
-    --color-blue: rgb(50,96,224);
-    --color-black: rgb(32, 35, 37);
+    --color-blue: #265EE8;
+    --color-black: #22272A;
+
 }
 
 * {
@@ -16,11 +17,13 @@ header {
 }
 
 nav.container .row {
+    margin-bottom: 40px;
+}
+
+nav.container .row {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    height: 40px;
 }
 
 .nav-login {
@@ -28,15 +31,16 @@ nav.container .row {
 }
 
 section {
-    padding: 40px;
+    padding: 60px;
 }
 
-section:nth-child(2n+3) {
+section:nth-child(2n+2) {
     background-color: rgb(245, 245, 245);
 }
 
 footer {
-    background-color: black;
+    background-color: var(--color-black);
+    padding-top: 50px;
 }
 
 header section {
@@ -73,16 +77,14 @@ header section {
     padding: 10px;
 }
 
-[class^='container'] {
-    margin: auto;
-}
-
 .container {
     width: 920px;
+    margin: auto;
 }
 
 .container-small {
     width: 700px;
+    margin: auto;
 
     display: flex;
     flex-direction: column;
@@ -101,8 +103,15 @@ header section {
 
 .container-big {
     width: 920px;
-    padding: 400px;
-    background-color: green;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-big > div {
+    text-align: center;
 }
 
 .container .row{
@@ -125,30 +134,24 @@ header section {
 
 .footer1 {
     display: flex;
-    padding: 5px 0 40px 0;
-    border-bottom: 2px solid blue;
+    align-items: flex-start;
+
+    padding: 5px 0 30px 0;
+    border-bottom: 1px solid #8EA1E1;
 }
 
 .footer-menu {
-    border: 1px dashed black;
-    padding: 200px 50px;
-    background-color: tomato;
     flex-basis: calc((920px / 6) * 2 );
     flex-grow: 1;
-
 }
 
 .footer-links {
-    border: 1px dashed white;
-    background-color: aquamarine;
-    padding: 50px;
     width: calc(920px / 6);
 }
 
 .footer2 {
-    margin-top: 40px;
-    padding: 1rem 0;
-    background-color: aqua;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
 
     color: white;
 
@@ -160,7 +163,6 @@ header section {
 .footer-logo,
 .footer-btn {
     padding: 5px 10px;
-    background-color: lightpink;
 }
 
 .btn {
@@ -178,6 +180,11 @@ header section {
     color: white;
 }
 
+.btn-blue {
+    background-color: #8EA1E1;
+    color: white;
+}
+
 h1 {
     font-size: 3rem;
 }
@@ -188,4 +195,55 @@ h2 {
 
 h3 {
     font-size: 2rem;
+}
+
+.text-blue {
+    color: #8EA1E1;
+}
+
+.footer-menu > p {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.footer-menu h3 {
+    margin-bottom: 20px;
+}
+
+.footer-menu p img {
+    width: 20px;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-links ul > * {
+    padding-top: .5rem;
+}
+
+.social-icons a {
+    color: white;
+}
+
+.social-icons a i {
+    padding-right: 20px;
+}
+
+.starred {
+    padding: 25px 35px;
+
+    background-image: url(img/stars.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.starred h3 {
+    font-size: 1.7rem;
 }
