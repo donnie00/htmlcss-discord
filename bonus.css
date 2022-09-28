@@ -1,0 +1,296 @@
+:root {
+    --color-blue: #265EE8;
+    --color-black: #22272A;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: var(--color-blue);
+    color: white;
+}
+
+nav.container .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-login {
+    text-align: right;
+}
+
+.col-big img {
+    width: 100%;
+}
+
+p {
+    line-height: 1.5rem;
+}
+
+section {
+    padding: 60px;
+}
+
+section:nth-child(2n+2) {
+    background-color: rgb(245, 245, 245);
+}
+
+footer {
+    background-color: var(--color-black);
+    padding-top: 50px;
+}
+
+header section {
+    background-image: url(img/jumbo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.nav-link-container {
+    flex-grow: 1;
+    padding: 0;
+    line-height: 38px;
+}
+
+.nav-link-container ul {
+    list-style: none;
+
+    display: flex;
+    justify-content: center;
+}
+
+.nav-link-container ul li a {
+    padding: 0 10px;
+
+    display: flex;
+    align-items: center;
+}
+
+.nav-side {
+    width: calc(920px / 5);
+    padding: 10px;
+}
+
+.container {
+    width: 920px;
+    margin: auto;
+}
+
+.container-small {
+    width: 600px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-small > div {
+    text-align: center;
+}
+
+
+.container-big {
+    width: 920px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-big > div {
+    text-align: center;
+}
+
+.container .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .row .col-small {
+    flex-basis: 30%;
+}
+
+.container .row .col-big {
+    flex-basis: 70%;
+}
+
+.container .row .col-big > img {
+    padding: 40px;
+}
+
+.footer1 {
+    display: flex;
+    align-items: flex-start;
+
+    padding: 5px 0 30px 0;
+    border-bottom: 1px solid #8EA1E1;
+}
+
+.footer-menu {
+    flex-basis: calc((920px / 6) * 2 );
+    flex-grow: 1;
+}
+
+.footer-links {
+    width: calc(920px / 6);
+}
+
+.footer2 {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo,
+.footer-btn {
+    padding: 5px 10px;
+}
+
+.btn {
+    border-radius: 20px;
+    padding: 0.5rem 0.7rem;
+    border: none;
+
+    transition: all 0.2s;
+}
+
+.btn-big {
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 2rem;
+}
+
+.btn-white {
+    background-color: white;
+}
+
+.btn-black {
+    background-color: var(--color-black);
+    color: white;
+}
+
+.btn-blue {
+    background-color: #8EA1E1;
+    color: white;
+}
+
+h1 {
+    font-size: 3rem;
+
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 2.5rem;
+
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+.text-blue {
+    color: #8EA1E1;
+}
+
+.footer-menu > p {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.footer-menu h3 {
+    margin-bottom: 20px;
+}
+
+.footer-menu p img {
+    width: 20px;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+
+    transition: all 0.3s ease-out;
+}
+
+.footer-links ul > * {
+    padding-top: .5rem;
+}
+
+.social-icons a {
+    color: white;
+}
+
+.social-icons a i {
+    padding-right: 20px;
+}
+
+.starred {
+    padding: 25px 35px;
+
+    background-image: url(img/stars.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.starred h3 {
+    font-size: 1.7rem;
+}
+
+.row-big {
+    padding: 20px;
+}
+
+.container-big img {
+    width: 100%;
+}
+
+.btn:hover {
+    box-shadow:5px 5px 10px #22272a73;
+    color: #8EA1E1;
+}
+
+.btn-blue:hover {
+    box-shadow:5px 5px 10px #aaaaaa;
+    color: #22272A;
+}
+
+a:hover {
+    color: #8EA1E1;
+    transform: scale(1.1);
+}
+
+.wave {
+    margin: -65px;
+    color: white;
+}
+
+.wave-rotate {
+    rotate: 180deg;
+}
+
+.wave-grey {
+    color: rgb(245, 245, 245);
+}
